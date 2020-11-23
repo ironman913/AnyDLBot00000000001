@@ -23,7 +23,7 @@ async def generate_short_link(message, link, file_name):
             if file_name is not None:
                 file_name = urllib.parse.unquote(file_name)
                 caption_str += f'\n<b>{file_name}</b>\n\n'
-            caption_str += f"\n⚡Powered By:<b>MoviezTrends</b>"
+            caption_str += f"\n⚡Powered By:<b>@KumarSwamiKS</b>"
             await message.reply(caption_str, quote=True, disable_web_page_preview=True)
         else:
             await message.reply(
